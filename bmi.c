@@ -19,6 +19,22 @@ int main(){
 	bmi = peso/(pow(altura,2));
 	
 	printf("\nSu indice de masa corporal es: %.2f\n\n", bmi);
+	if(bmi>=30){
+		printf("Se encuentra en condicion de Obesidad\n");
+	}
+	else{
+		if(bmi<30 && bmi>=25){
+			printf("Se encuentra en condicion de Sobrepeso\n");
+		}
+		else{
+			if(bmi<25 && bmi>=18.5){
+				printf("Se encuentra en condicion Normal\n");
+			}
+			else{
+				printf("Se encuentra en condicion de Bajo peso\n");
+			}
+		}
+	}
 	
 	printf("    Indice     |  Condicion\n");
 	printf("-----------------------------\n");
@@ -26,6 +42,8 @@ int main(){
 	printf(" 18.5 a 24.9   |  Normal\n");
 	printf(" 25.0 a 29.9   |  Sobrepeso\n");
 	printf("     >=30      |  Obesidad\n");
+	
+
 	
 	
 	return 0;
