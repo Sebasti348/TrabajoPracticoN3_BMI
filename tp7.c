@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-/*1. Escribir un programa en lenguaje C que permita a un almacÈn gestionar una lista de precios y su cÛdigo de barra. El programa debe utilizar un arreglo para almacenar los cÛdigos de barra, otro para el precio y debe ofrecer las siguientes funcionalidades:
+/*1. Escribir un programa en lenguaje C que permita a un almac√©n gestionar una lista de precios y su c√≥digo de barra. El programa debe utilizar un arreglo para almacenar los c√≥digos de barra, otro para el precio y debe ofrecer las siguientes funcionalidades:
 
-a) Al inicio, el programa debe solicitar al usuario ingresar una cantidad fija de cÛdigos de barra con su precio, y agregarlo a la lista de productos. Esta cantidad fija ser· una constante simbÛlica llamada TAM definida al inicio del cÛdigo.
+a) Al inicio, el programa debe solicitar al usuario ingresar una cantidad fija de c√≥digos de barra con su precio, y agregarlo a la lista de productos. Esta cantidad fija ser√° una constante simb√≥lica llamada TAM definida al inicio del c√≥digo.
 
 b) Los precios de los productos pueden tener decimales y pero no pueden ser negativos.
 
-c) Los cÛdigos de barra deben ser enteros positivos mayores que 0 de hasta 9 cifras.
+c) Los c√≥digos de barra deben ser enteros positivos mayores que 0 de hasta 9 cifras.
 
 d) Al finalizar la carga de los productos, se debe mostrar en pantalla la lista completa de productos almacenados y sus precios.
 
-e) Se debe imprimir en pantalla el mayor precio en la lista e imprimir su cÛdigo de barra.
+e) Se debe imprimir en pantalla el mayor precio en la lista e imprimir su c√≥digo de barra.
 
-f) Se debe imprimir en pantalla el menor precio en la lista e imprimir su cÛdigo de barra.
+f) Se debe imprimir en pantalla el menor precio en la lista e imprimir su c√≥digo de barra.
 */
 #define TAM 5
 
@@ -22,17 +22,16 @@ int main(int argc, char *argv[]) {
 	int codigo[TAM]={0};
 	float precio[TAM]={0};
 	int flag=1;
-	int *pcodigo=codigo;
 	float *pprecio=precio;
 
 		
-	printf("Ingrese 5 productos, se solicitar· el cÛdigo y precio: \n");
+	printf("Ingrese 5 productos, se solicitar√° el c√≥digo y precio: \n");
 	for(int i=0; i<TAM; i++){
 		do{
-			printf("Ingrese el cÛdigo de barras (1-999999999): \n");
+			printf("Ingrese el c√≥digo de barras (1-999999999): \n");
 			scanf("%d",&codigo[i]);
 			if(codigo[i]<=0 || codigo[i]>999999999){
-				printf("Error. El cÛdigo de barras debe estar entre 1 y 999999999");
+				printf("Error. El c√≥digo de barras debe estar entre 1 y 999999999");
 				flag=0;
 			}
 			else{
@@ -53,7 +52,7 @@ int main(int argc, char *argv[]) {
 		} while(flag==0);
 	}
 	
-	printf("\nCÛdigo\tPrecio\n");
+	printf("\nC√≥digo\tPrecio\n");
 	
 	for(int i = 0; i < TAM; i++) {
 		
