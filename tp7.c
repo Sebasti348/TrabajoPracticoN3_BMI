@@ -1,19 +1,4 @@
 #include <stdio.h>
-
-/*1. Escribir un programa en lenguaje C que permita a un almacén gestionar una lista de precios y su código de barra. El programa debe utilizar un arreglo para almacenar los códigos de barra, otro para el precio y debe ofrecer las siguientes funcionalidades:
-
-a) Al inicio, el programa debe solicitar al usuario ingresar una cantidad fija de códigos de barra con su precio, y agregarlo a la lista de productos. Esta cantidad fija será una constante simbólica llamada TAM definida al inicio del código.
-
-b) Los precios de los productos pueden tener decimales y pero no pueden ser negativos.
-
-c) Los códigos de barra deben ser enteros positivos mayores que 0 de hasta 9 cifras.
-
-d) Al finalizar la carga de los productos, se debe mostrar en pantalla la lista completa de productos almacenados y sus precios.
-
-e) Se debe imprimir en pantalla el mayor precio en la lista e imprimir su código de barra.
-
-f) Se debe imprimir en pantalla el menor precio en la lista e imprimir su código de barra.
-*/
 #define TAM 5
 
 float mayorPrecio(float *vec1);
